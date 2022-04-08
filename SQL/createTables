@@ -1,8 +1,8 @@
 # Create flights table
 create table flights
 (
-    travelCode INT    null,
-    userCode   INT    null,
+    travelCode INT    not null,
+    userCode   INT    not null,
     `from`     TEXT   null,
     `to`       TEXT   null,
     flightType TEXT   null,
@@ -11,6 +11,18 @@ create table flights
     distance   DOUBLE null,
     agency     TEXT   null,
     date       text   null
+);
+
+# Create transaction table
+create table transactions
+(
+    userCode int not null,
+    travelCode int not null,
+    transType varchar(255),
+    vendor varchar(255),
+    price double,
+    reimbGroup int,
+    datetime datetime
 );
 
 # Update dates to date format in flight table
