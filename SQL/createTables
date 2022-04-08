@@ -1,0 +1,22 @@
+# Create flights table
+create table flights
+(
+    travelCode INT    null,
+    userCode   INT    null,
+    `from`     TEXT   null,
+    `to`       TEXT   null,
+    flightType TEXT   null,
+    price      DOUBLE null,
+    time       DOUBLE null,
+    distance   DOUBLE null,
+    agency     TEXT   null,
+    date       text   null
+);
+
+# Update dates to date format in flight table
+update flights
+set date = str_to_date(date, '%m/%d/%Y');
+
+# Alter date column to date datatype in flight table
+alter table flights
+modify column `date` date;
