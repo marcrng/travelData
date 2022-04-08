@@ -1,3 +1,4 @@
+travelCode,userCode,name,place,days,price,total,date,rating,bookMethod
 0,0,Hotel A,Florianopolis (SC),4,313.02,1252.08,09/26/2019,1,internal
 2,0,Hotel K,Salvador (BH),2,263.41,526.82,10/10/2019,2,external
 7,0,Hotel K,Salvador (BH),3,263.41,790.23,11/14/2019,1,internal
