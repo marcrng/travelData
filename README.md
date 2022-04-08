@@ -18,9 +18,10 @@ After doing some quick research on common KPI's in travel management, I decided 
 - Cabin compliance/non-compliance
 - Traveler satisfaction
 - Carbon visibility
+- Booking tool adoption
 
 ### 4.2 |Data Collection
-Having only 3 days to push the initial version of this project, I settled on a dataset from [Kaggle's 2019 Datathon](https://www.kaggle.com/datasets/leomauro/argodatathon2019?select=flights.csv). 
+Having only 3 days to push the initial version of this project, I settled on a dataset from [Kaggle's 2019 Datathon](https://www.kaggle.com/datasets/leomauro/argodatathon2019?select=flights.csv) rather than spending more time finding an API.
 
 This dataset featured 3 tables: `flights`, `hotels`, and `users`. 
 
