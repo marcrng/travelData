@@ -58,10 +58,10 @@ set bookMethod = ELT(1 + RAND() * 1, 'internal', 'external');
 
 # Add ratings column to flights and hotels
 alter table flights
-add column rating smallint;
+add column rating tinyint;
 
 alter table hotels
-add column rating smallint;
+add column rating tinyint;
 
 # Add random ratings to flights and hotels
 update flights
