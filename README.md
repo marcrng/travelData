@@ -62,7 +62,7 @@ update flights
 set rating = FLOOR(RAND()*(5-0));
 ```
 
-- Set ratings of 0 to `null` to indicate bookings that weren't rated by the traveler
+- Set ratings of 0 to `null` to indicate bookings that weren't rated by the client
 ```sql
 update flights
 set rating = null
