@@ -2,14 +2,14 @@
 
 ---
 
-## 1. |Description
+## 1. | Description
 
-## 2. |Goals
+## 2. | Goals
 
-## 3. |Plan
+## 3. | Plan
 
-## 4. |Process
-### 4.1 |Identifying KPI's
+## 4. | Process
+### 4.1 | Identifying KPI's
 After doing some quick research on common KPI's in travel management, I decided to track:
 
 - Use of approved booking channels
@@ -20,12 +20,12 @@ After doing some quick research on common KPI's in travel management, I decided 
 - Carbon visibility
 - Booking tool adoption
 
-### 4.2 |Data Collection
+### 4.2 | Data Collection
 Having only 3 days to push the initial version of this project, I settled on a dataset from [Kaggle's 2019 Datathon](https://www.kaggle.com/datasets/leomauro/argodatathon2019?select=flights.csv) rather than spending more time finding an API.
 
 This dataset featured 3 tables: `flights`, `hotels`, and `users`. 
 
-#### 4.2.1 |Data Creation
+#### 4.2.1 | Data Creation
 I wasn't satisfied with just the sample data found online, so I created some simulated data so tracking more of the above KPI's would be possible.
 
 ---
@@ -69,12 +69,34 @@ set rating = null
 where rating = 0;
 ```
 
-### 4.3 |Data Cleaning
+### 4.3 | Data Cleaning
 
-### 4.4 |Data Storing
+### 4.4 | Data Storing
 
-## 5. |Findings
+### 4.4 | EDA
 
-## 6. |Future Possibilities
+### 4.5 | Initial Dashboard
 
-## 7. |Things to Improve
+---
+#### Client names and internal booking tool utilization
+The first sheet aimed to allow stakeholders to view, filter, and sort client data based on total bookings on record and percentage of bookings created using our internal tool vs. any other third-party tool.
+
+![Names and internal tool utilization](img.png)
+
+---
+#### Total spend and bookings by quarter
+The second sheet shows total spend on travel per quarter via a bar chart, and total bookings per quarter via a line above the bars. This graph filters dynamically based on which names are selected in the previous sheet.
+
+![Total spend/count of bookings](img_1.png)
+
+---
+#### Ratings by quarter
+This sheet displays the average ratings per quarter, and is also filtered by the name selection on the first sheet.
+
+![Ratings by quarter](img_2.png)
+
+## 5. | Findings
+
+## 6. | Future Possibilities
+
+## 7. | Things to Improve
