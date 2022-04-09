@@ -95,8 +95,20 @@ This sheet displays the average ratings per quarter, and is also filtered by the
 
 ![Ratings by quarter](img_2.png)
 
+---
+#### Dynamic line graphs
+These graphs allow stakeholders to choose which measures they want visualized, along with a pivot table showing the numbers between bookings made with our internal tool and without.
+
+![Dynamic graph with PT](img_3.png)
+
+---
+
+
 ## 5. | Findings
 
 ## 6. | Future Possibilities
 
 ## 7. | Things to Improve
+- Data on discounted/market rates to better emulate a real-world corporate travel program
+- Visualizations clearly showing percent difference between periods
+- Data on car rentals (pricing, duration, etc.)
