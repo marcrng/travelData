@@ -101,6 +101,8 @@ These graphs allow stakeholders to choose which measures they want visualized, a
 
 ![Dynamic graph with PT](img_3.png)
 
+- The flight/hotel measures selection menu was created using a user-defined parameter field, with a calculated field defining what should happen per the selection in 'Flight Measures'.
+
 ---
 
 
