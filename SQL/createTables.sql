@@ -25,6 +25,20 @@ create table transactions
     datetime datetime
 );
 
+# Create users table
+create table users
+(
+    code int not null primary key,
+    company varchar(255),
+    name varchar(255),
+    gender char(1),
+    age tinyint
+);
+
+# Update datatypes for existing tables
+alter table users
+modify column company varchar(255);
+
 # Update dates to date format in flight table
 update flights
 set date = str_to_date(date, '%m/%d/%Y');
@@ -44,6 +58,9 @@ alter table hotels
 add primary key (travelCode);
 
 alter table hotels
+add foreign key (userCode) references users(code);
+
+alter table transactions
 add foreign key (userCode) references users(code);
 
 # Add internal/external booking method field flights and hotels
@@ -91,3 +108,8 @@ where rating = 0;
 update hotels
 set rating = null
 where rating = 0;
+
+
+select company, count(*)
+from users
+group by company
